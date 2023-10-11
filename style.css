@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: white;
 }
-.card{
+
+.card {
     width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548a);
@@ -17,13 +19,15 @@ body{
     padding: 40px 35px;
     text-align: center;
 }
-.search{
+
+.search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.search input{
+
+.search input {
     border: 0;
     outline: 0;
     background: #ebfffc;
@@ -35,7 +39,8 @@ body{
     margin-right: 16px;
     font-size: 18px;
 }
-.search button{
+
+.search button {
     border: 0;
     outline: 0;
     background: #ebfffc;
@@ -44,49 +49,110 @@ body{
     height: 60px;
     cursor: pointer;
 }
-.search button img{
+
+.search button img {
     width: 16px;
 }
-.weather-icon{
+
+.weather-icon {
     width: 170px;
     margin-top: 30px;
 }
-.weather h1{
+
+.weather h1 {
     font-size: 80px;
     font-weight: 500;
 }
-.weather h2{
+
+.weather h2 {
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
 }
-.details{
+
+.details {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
 }
-.col{
+
+.col {
     display: flex;
     align-items: center;
     text-align: left;
 }
-.col img{
+
+.col img {
     width: 40px;
     margin-right: 10px;
 }
-.humidity, .wind{
+
+.humidity,
+.wind {
     font-size: 28px;
     margin-top: -6px;
 }
-.weather{
+
+.weather {
     display: none;
 }
-.error{
+
+.error {
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+
+.forecast {
+    margin-top: 25px;
+    display: none;
+}
+
+.forecast-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.forecast-day {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Adjust forecast day icon size and spacing */
+.forecast-day img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2px;
+}
+.date {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.suggestion-item:hover {
+    background-color: #f2f2f2;
 }
